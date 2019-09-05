@@ -2,6 +2,7 @@
   <div class="app-container">
     <mt-header fixed title="测试头部导航"></mt-header>
     <h1>123</h1>
+    <p>sdsds</p>
     <nav class="mui-bar mui-bar-tab">
       <a class="mui-tab-item mui-active" href="#tabbar">
         <span class="mui-icon mui-icon-home"></span>
