@@ -8,6 +8,7 @@ import Shopcarbar from './components/tabbar/Shopcarbar.vue'
 // 3. 创建路由对象
 var router = new VueRouter({
   routes: [//配置路由规则
+    {path:'/',redirect:'/home'},
     {path:'/home',component: Homebar},
     {path:'/Memberbar',component: Memberbar},
     {path:'/Searchbar',component: Searchbar},

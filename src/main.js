@@ -4,9 +4,13 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
+
 import './lib/mui/css/mui.css'
 import './lib/mui/css/mui-icons-extra.css'
 
+//接口
+import VueResource from 'vue-resource'
+Vue.use(VueResource)
 
 
 

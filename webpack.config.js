@@ -14,7 +14,7 @@ module.exports = {
   plugins: [ // 所有webpack  插件的配置节点
     new htmlWebpackPlugin({
       template: path.join(__dirname, './src/index.html'), // 指定模板文件路径
-      filename: 'index.html' // 设置生成的内存页面的名称
+      filename: 'index.html', // 设置生成的内存页面的名称
     })
   ],
   module: { // 配置所有第三方loader 模块的
@@ -33,5 +33,17 @@ module.exports = {
     alias: { // 修改 Vue 被导入时候的包的路径
       // "vue$": "vue/dist/vue.js"
     }
-  }
+  },
+  // dev:{
+  //   proxyTable: {
+  //     '/api':{
+  //       target: 'http://www.liulongbin.top:3005', // 发送请求的后台接口
+  //       changeOrigin: true,
+  //       secure: false,  // 如果是https接口，需设置secure为false
+  //       pathRewrite:{ 
+  //         '^/api': '' // 用/api代替后端接口路径
+  //       }
+  //     }
+  //   },
+  // }
 }
